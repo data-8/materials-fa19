@@ -7,6 +7,7 @@ test = {
         {
           'code': r"""
           >>> all_different in {True, False}
+          True
           """,
           'hidden': False,
           'locked': False

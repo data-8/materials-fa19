@@ -10,6 +10,7 @@ test = {
           >>> # number of kinds of fruit or the number of boxes from which;
           >>> # there were sales.;
           >>> total_fruits_sold > 10
+          True
           """,
           'hidden': False,
           'locked': False

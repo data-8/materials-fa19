@@ -11,6 +11,7 @@ test = {
           >>> # You can use elementwise multiplication for that.;
           >>> # Then you want the sum of those products.  Use sum().;
           >>> 50 <= total_revenue <= 150
+          True
           """,
           'hidden': False,
           'locked': False

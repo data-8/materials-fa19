@@ -7,6 +7,10 @@ test = {
         {
           'code': r"""
           >>> fruits.sort(0)
+          fruit name | count
+          apple      | 4
+          orange     | 3
+          pineapple  | 3
           """,
           'hidden': False,
           'locked': False
