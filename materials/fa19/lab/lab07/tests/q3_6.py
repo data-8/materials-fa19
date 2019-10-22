@@ -14,26 +14,20 @@ test = {
         },
         {
           'code': r"""
-          >>> test = False;
-          >>> try:
-          ...     test = round(rate_means.where("Death Penalty", "False").column(1).item(0), 3) == 8.12;
-          >>> except:
-          ...     test = round(rate_means.where("Death Penalty", False).column(1).item(0), 3) == 8.12;
-          >>> test
-          True
+          >>> new_col = rate_means.apply(lambda x: str(x), "Death Penalty");
+          >>> test_rate_means = rate_means.with_column("Death Penalty",new_col);
+          >>> test_rate_means.where("Death Penalty", "False").column(1).item(0)
+          8.120454540452272
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> test = False;
-          >>> try:
-          ...     test = round(rate_means.where("Death Penalty", "True").column(1).item(0), 3) == 7.514;
-          >>> except:
-          ...     test = round(rate_means.where("Death Penalty", True).column(1).item(0), 3) == 7.514;
-          >>> test
-          True
+          >>> new_col = rate_means.apply(lambda x: str(x), "Death Penalty");
+          >>> test_rate_means = rate_means.with_column("Death Penalty",new_col);
+          >>> test_rate_means.where("Death Penalty", "True").column(1).item(0)
+          7.513636380386362
           """,
           'hidden': False,
           'locked': False
