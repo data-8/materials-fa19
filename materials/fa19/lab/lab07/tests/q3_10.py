@@ -8,7 +8,7 @@ test = {
           'code': r"""
           >>> np.random.seed(123);
           >>> round(simulate_and_test_statistic(change_in_death_rates, "Murder Rate", "Death Penalty"), 3)
-          -1.67
+          -1.398
           """,
           'hidden': False,
           'locked': False

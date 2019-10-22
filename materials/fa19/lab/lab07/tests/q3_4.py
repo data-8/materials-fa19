@@ -22,7 +22,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.all(postban_rates.column("Death Penalty") == "False")
+          >>> np.all(postban_rates.column("Death Penalty") == "False") or np.all(postban_rates.column("Death Penalty") == False)
           True
           """,
           'hidden': False,

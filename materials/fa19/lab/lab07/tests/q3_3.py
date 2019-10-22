@@ -22,7 +22,7 @@ test = {
         },
         {
           'code': r"""
-          >>> np.all(preban_rates.column("Death Penalty") == True)
+          >>> np.all(preban_rates.column("Death Penalty") == True) or np.all(preban_rates.column("Death Penalty") == "True")
           True
           """,
           'hidden': False,
